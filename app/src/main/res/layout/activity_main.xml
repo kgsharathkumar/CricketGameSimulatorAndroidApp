@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/firstInnScoreLabel"
+            android:text="Target Score:"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/firstInnScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30dp"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@drawable/ground_pich"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="140dp"
+            android:id="@+id/secondInnScoreLabel"
+            android:layout_marginLeft="10dp"
+            android:text="Innings 2:"
+            android:textSize="20dp"
+            android:textColor="@color/colorLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="140dp"
+            android:nextFocusLeft="@id/secondInnScoreLabel"
+            android:id="@+id/secondInnScore"
+            android:layout_marginLeft="110dp"
+            android:text="0"
+            android:textSize="20dp"
+            android:textColor="@color/colorLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="160dp"
+            android:id="@+id/secondInnWicketsLabel"
+            android:layout_marginLeft="10dp"
+            android:text="Wickets:"
+            android:textSize="20dp"
+            android:textColor="@color/colorLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="160dp"
+            android:nextFocusLeft="@id/secondInnWicketsLabel"
+            android:id="@+id/secondInnWicket"
+            android:layout_marginLeft="110dp"
+            android:text="0"
+            android:textSize="20dp"
+            android:textColor="@color/colorLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="180dp"
+            android:id="@+id/secondInnBallsLabel"
+            android:layout_marginLeft="10dp"
+            android:text="Rem Ball:"
+            android:textSize="20dp"
+            android:textColor="@color/colorLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="180dp"
+            android:nextFocusLeft="@id/secondInnBallsLabel"
+            android:id="@+id/secondInnBalls"
+            android:layout_marginLeft="110dp"
+            android:text="0"
+            android:textSize="20dp"
+            android:textColor="@color/colorLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="210dp"
+            android:id="@+id/winner"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textSize="30dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bowling"
+            android:layout_marginTop="460dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bolowing"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>
